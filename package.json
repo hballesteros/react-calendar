@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && yarn PWA",
+    "preview": "vite preview",
+    "PWA": "workbox injectManifest workbox-config.cjs"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
